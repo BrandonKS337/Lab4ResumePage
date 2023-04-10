@@ -1,0 +1,133 @@
+:root {
+  --clr-textleft: rgb(163, 189, 141);
+  --clr-textright: rgb(53, 107, 10);
+  --clr-bkground: rgb(35, 35, 43);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: -5px -5px 0 0 ;
+}
+.mainbody {
+  background-color: var(--clr-bkground);
+  font-family: "Roboto" sans-serif;
+  display: flex;
+  justify-content: flex-start;
+}
+
+p,
+li {
+  font-size: 14px;
+}
+aside {
+  background-color: var(--clr-bkground);
+  color: var(--clr-textleft);
+  width: 20%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* article Styling. Each one is a different carer on resume*/
+.rightSide {
+  width: 80vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  color: var(--clr-textright) ;
+}
+.namePlate {
+  height: 150px;
+  border-bottom: 1px solid var(--clr-textright);
+}
+
+/* This is the profile photo */
+.topleft {
+  width: 8rem;
+  border-radius: 50%;
+  height: 8rem;
+}
+
+/* These are the nav bar segments */
+.icon {
+  height: 30px;
+}
+.nav0,.nav1,.nav2,.nav3 {
+  border-bottom: 1px solid var(--clr-textleft); 
+}
+.nav1,.nav2,.nav3,.nav4 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+.nav0 {
+  display: flex;
+  justify-content: center;
+  height: relative;
+  width: auto;
+}
+.nav4 {
+  text-align: right;
+}
+
+/* This is the main body text */
+.profile {
+  /* height: 15vh; */
+  border-bottom: 1px solid var(--clr-textright);
+  height: relative;
+}
+.workXP {
+  /* height: auto; */
+  border-bottom: 1px solid var(--clr-textright);
+}
+.Education {
+  display: flex;
+  /* border: 2px solid black; */
+  justify-content: space between;
+  flex-wrap: wrap;
+}
+.educationlr {
+  display: flex;
+  border-bottom: 1px solid var(--clr-textright);
+  width: 33%;
+  flex-wrap: wrap;
+}
+.skillsr {
+  display: flex;
+  /* justify-content: space-evenly; */
+  width: 40vw;
+  /* border: 1px solid black; */
+  gap: 25px;
+}
+
+
+li {
+  margin-bottom: 3px;
+}
+.card {
+  /* height: relative; */
+}
+
+/* This part does the same as the gap property listed inside .skillslr */
+/* .skillslist {
+  margin: -5px 45px 0 0;
+} */
+
+#contactLinks {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  /* border-top: 1px solid black; */
+  border-width: relative;
+  padding-bottom: 15px;
+  position:fixed;
+  bottom: 0px; 
+  width: auto;
+  flex-wrap: wrap;
+}
+.smallIcons {
+  height: 30px;
+  
+}
