@@ -211,3 +211,8 @@ li {
 .smallIcons {
   height: 30px;
 }
+
+#workInProg {
+  max-height: 150px;
+  width: 100%;
+}
